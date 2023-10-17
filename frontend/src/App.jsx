@@ -2,7 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Hello from './components/Hello.jsx'
+import Posts from './components/pages/Posts'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,8 +17,9 @@ function App() {
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
+        <p><Posts /></p>
       </div>
-      <Hello name="krishna" />
+      
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
